@@ -1,0 +1,78 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+            "path" : "pages/home/home",
+			"style": {}
+		},
+		{
+            "path" : "pages/personal/personal",
+            "style" : {}
+        },
+		{
+            "path" : "pages/rests/login",
+            "style" : {}
+        },
+		{
+            "path" : "pages/rests/edit",
+            "style" : {}
+        },
+		{
+		    "path" : "pages/rests/detail",
+		    "style" : {}
+		},
+		{
+            "path" : "pages/test/test",
+            "style" : {}
+        },
+		{
+			"path" : "pages/editor/editor"
+		}
+    ],
+	"globalStyle": {
+		"navigationStyle": "custom",//导航栏样式，仅支持 default/custom。custom即取消默认的原生导航栏
+		"navigationBarBackgroundColor": "#0081ff",//导航栏背景颜色（同状态栏背景色）
+		"navigationBarTitleText": "ColorUi for UniApp",//导航栏标题文字内容
+		"navigationBarTextStyle": "white"//导航栏标题颜色及状态栏前景颜色，仅支持 black/white
+	},
+	"tabBar":{
+		"color": "#c5c5c5",//未选中颜色
+		"selectedColor": "#1E90FF",//选中颜色
+		"borderStyle": "black",//上边框颜色
+		"backgroundColor": "#F8F8F8",//背景颜色
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text": "主页",
+				"iconPath":"/static/icon/dir_2.png",
+				"selectedIconPath":"/static/icon/dir_1.png"
+			},
+			{
+				"pagePath": "pages/personal/personal",
+				"text": "我的",
+				"iconPath":"/static/icon/my_2.png",
+				"selectedIconPath":"/static/icon/my_1.png"
+			}
+		]
+	},
+	"usingComponts": true,
+		"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			// {
+			// 	"name": "开发", //模式名称
+			// 	"path": "pages/rests/detail", //启动页面
+			// 	"query": "" //启动参数
+			// },
+			// {
+			// 	"name": "练习", //模式名称
+			// 	"path": "pages/test/test", //启动页面
+			// 	"query": "" //启动参数
+			// },
+			// {
+			// 	"name": "edit", //模式名称
+			// 	"path": "pages/editor/editor", //启动页面
+			// 	"query": "" //启动参数
+			// }
+		]
+	}
+}
